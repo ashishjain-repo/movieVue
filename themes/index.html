@@ -8,17 +8,41 @@
     <link rel="stylesheet" href="css/output.css">
 </head>
 
-<body>
+<body class="bg-gradient-to-r from-slate-900 to-slate-700">
     <!-- Run this command for Tailwindcss CLI: npx tailwindcss -i ./css/input.css -o ./css/output.css --watch -->
-    <nav class="grid text-center border py-4 bg-black text-white h-32">
-        <div>
-            <a href="" class="text-3xl kanit-black">MovieDB</a>
+    <nav class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 justify-center items-center align-middle text-center py-4 bg-black text-white shadow-sm shadow-slate-500">
+        <div class="">
+            <a href="" class="text-3xl lg:text-4xl kanit-black">MovieDB</a>
         </div>
-        <div class="grid grid-cols-2 py-2 font-semibold">
-            <a href="" class="hover:text-amber-400 mx-6 py-3 rounded-md ">Movies</a>
-            <a href="" class="hover:text-amber-400 mx-6 py-3 rounded-md">TV-Shows</a>
+        <div class="hidden xs:flex"></div>
+        <div class="hidden lg:flex"></div>
+        <div class="flex justify-evenly gap-2 sm:gap-1 font-semibold lg:text-xl">
+            <a href="" class="hover:text-amber-400">Home</a>
+            <a href="" class="hover:text-amber-400">Movies</a>
+            <a href="" class="hover:text-amber-400">TV</a>
         </div>
     </nav>
+
+    <main>
+        <section class="text-center py-5">
+            <h1 class="text-5xl xs:text-6xl sm:text-7xl lg:text-8xl text-white font-bold my-5 kanit-black">MovieDB</h1>
+            <p class="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl text-white font-bold">Your Movie Guide</p>
+            <hr class="m-10">
+        </section>
+
+        <section class="">
+            
+            <h1 class="text-white text-center text-xl font-semibold my-4">Top 5 Popular Movies</h1>
+            <div class="grid gap-1 px-4">
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
