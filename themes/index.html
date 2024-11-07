@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/output.css">
+    <script>
+        import 'primeicons/primeicons.css';
+    </script>
 </head>
 
 <body class="bg-gradient-to-r from-slate-900 to-slate-700">
     <!-- Run this command for Tailwindcss CLI: npx tailwindcss -i ./css/input.css -o ./css/output.css --watch -->
-    <nav class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 justify-center items-center align-middle text-center py-4 bg-black text-white shadow-sm shadow-slate-500">
+    <nav class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center items-center align-middle text-center py-4 bg-black text-white shadow-sm shadow-slate-500">
         <div class="">
             <a href="" class="text-3xl lg:text-4xl kanit-black">MovieDB</a>
         </div>
         <div class="hidden xs:flex"></div>
         <div class="hidden lg:flex"></div>
+        <div class="hidden xl:flex"></div>
         <div class="flex justify-evenly gap-2 sm:gap-1 font-semibold lg:text-xl">
             <a href="" class="hover:text-amber-400">Home</a>
             <a href="" class="hover:text-amber-400">Movies</a>
@@ -32,17 +36,93 @@
 
         <section class="">
             
-            <h1 class="text-white text-center text-xl font-semibold my-4">Top 5 Popular Movies</h1>
-            <div class="grid gap-1 px-4">
+            <h1 class="text-white text-center text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-14">Top 6 Popular Movies</h1>
+            <div class="grid gap-1 px-4 sm:grid-cols-2 xs:px-8 lg:grid-cols-3 xl:grid-cols-4">
+
                 <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
-                    <img src="./images/no-image.png" alt="" class="mx-auto">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
                     <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
                     <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
                 </a>
-                
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
             </div>
+            <hr class="m-10">
         </section>
+
+        <section class="">
+            
+            <h1 class="text-white text-center text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-14">Top 6 TV-Shows</h1>
+            <div class="grid gap-1 px-4 sm:grid-cols-2 xs:px-8 lg:grid-cols-3 xl:grid-cols-4">
+
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+                <a class="mx-auto my-2 grid border py-4 px-3 text-center text-white bg-gradient-to-r from-blue-950 to-indigo-950 transition-all duration-200 hover:scale-105 active:scale-95 hover:bg-gradient-to-r hover:from-blue-900 hover:to-indigo-900 active:bg-gradient-to-r active:from-green-800 active:to-lime-700" href="">
+                    <img src="./images/no-image.png" alt="" class="mx-auto object-contain max-w-56 md:max-w-64 lg:max-w-72">
+                    <p class="text-xl py-1 font-semibold">Movie or Show Name</p>
+                    <p class="text-lg">Release: <span class="font-bold">xx/xx/xxxx</span></p>
+                </a>
+            </div>
+            </section>
     </main>
+    <nav class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center items-center align-middle text-center py-4 bg-black text-white shadow-sm shadow-slate-500 mt-4">
+        <div class="">
+            <a href="" class="text-3xl lg:text-4xl kanit-black">MovieDB</a>
+        </div>
+        <div class="hidden xs:flex"></div>
+        <div class="hidden lg:flex mx-auto">Personal Learning Project. Made By Ashish Jain</div>
+        <div class="hidden xl:flex"></div>
+        <div class="flex justify-evenly gap-2 sm:gap-1 font-semibold lg:text-xl">
+            <a href="" class="hover:text-amber-400">TMBD</a>
+            <a href="" class="hover:text-amber-400">Github</a>
+        </div>
+    </nav>
 </body>
 
 </html>
