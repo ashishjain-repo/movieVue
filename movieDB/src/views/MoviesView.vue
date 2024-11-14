@@ -1,14 +1,14 @@
 <script setup>
 import NavbarTop from '@/components/navbar/NavbarTop.vue';
 import NavbarBottom from '@/components/navbar/NavbarBottom.vue';
-import LatestMovies from '@/components/latest/LatestMovies.vue';
+import Movies from '@/components/Movies.vue';
 </script>
 
 <template>
 <body class="bg-gradient-to-r from-slate-900 to-slate-700">
         <NavbarTop />
         <main>
-<LatestMovies />
+<Movies :title="'Trending Movies'" :endPoint="'movie/popular'"/>
         </main>
         <NavbarBottom />
 </body>
