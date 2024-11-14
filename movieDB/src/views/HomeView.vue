@@ -2,6 +2,7 @@
 import NavbarTop from '@/components/NavbarTop.vue';
 import NavbarBottom from '@/components/NavbarBottom.vue';
 import TopMovies from '@/components/TopMovies.vue';
+import TopTvShows from '@/components/TopTvShows.vue';
 
 </script>
 
@@ -15,6 +16,7 @@ import TopMovies from '@/components/TopMovies.vue';
             <hr class="m-10">
             </section>
             <TopMovies />
+            <TopTvShows />
         </main>
         <NavbarBottom />
     </body>
