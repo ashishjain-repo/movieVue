@@ -2,6 +2,7 @@
 import NavbarTop from '@/components/navbar/NavbarTop.vue';
 import NavbarBottom from '@/components/navbar/NavbarBottom.vue';
 import Movies from '@/components/Movies.vue';
+document.title = 'MovieDB | Movies'
 </script>
 
 <template>

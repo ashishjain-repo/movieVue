@@ -1,0 +1,22 @@
+{
+    "backdrop_path": "",
+    "budget": 123456,
+    "genres":[
+        {"name":"Drama"},
+        {"name":"Action"}
+    ],
+    "homepage":"Some Link",
+    "title":"Some Movie",
+    "runtime":100,
+    "revenue":105561651,
+    "release_date":"1999-10-15",
+    "overview":"This is the overview of the movie that will be rendered from the get request",
+    "production_companies":[
+        {"name":"Production 1"},
+        {"name":"Production 2"},
+        {"name":"Production 3"}
+    ],
+    "original_language":"en",
+    "status": "Released",
+    "vote_average": 8.4333
+}

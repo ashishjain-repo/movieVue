@@ -3,7 +3,7 @@ import NavbarTop from '@/components/navbar/NavbarTop.vue';
 import NavbarBottom from '@/components/navbar/NavbarBottom.vue';
 import Movies from '@/components/Movies.vue';
 import TvShows from '@/components/TvShows.vue';
-
+document.title = 'MovieDB | Home';
 </script>
 
 <template>

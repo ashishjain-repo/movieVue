@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <script id="json-data" type="application/json">
+        {"backdrop_path": "",
+    "budget": 123456,
+    "genres":[
+        {"name":"Drama"},
+        {"name":"Action"}
+    ],
+    "homepage":"Some Link",
+    "title":"Some Movie",
+    "runtime":100,
+    "revenue":105561651,
+    "release_date":"1999-10-15",
+    "overview":"This is the overview of the movie that will be rendered from the get request",
+    "production_companies":[
+        {"name":"Production 1"},
+        {"name":"Production 2"},
+        {"name":"Production 3"}
+    ],
+    "original_language":"en",
+    "status": "Released",
+    "vote_average": 8.4333}
+    </script>
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-slate-700 text-white">
+    <nav class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center items-center align-middle text-center py-4 bg-black text-white shadow-sm shadow-slate-500">
+        <div class="">
+            <a href="" class="text-3xl lg:text-4xl kanit-black">MovieDB</a>
+        </div>
+        <div class="hidden xs:flex"></div>
+        <div class="hidden lg:flex"></div>
+        <div class="hidden xl:flex"></div>
+        <div class="flex justify-evenly gap-2 sm:gap-1 font-semibold lg:text-xl align-middle items-center">
+            <a href="" class="hover:text-amber-400 transition-all duration-200 border-2 border-gray-300 p-1 rounded-md bg-gray-700">Home</a>
+            <a href="" class="hover:text-amber-400 transition-all duration-200">Movies</a>
+            <a href="" class="hover:text-amber-400 transition-all duration-200">TV</a>
+        </div>
+    </nav>
+    <!-- <a href="" class="border w-40 text-center block mx-auto mt-2 p-2 rounded border-amber-400 hover:bg-amber-400 hover:text-black transition-all duration-500 font-semibold">Back To Home</a> -->
+    <main>
+        <section class="grid lg:grid-cols-2 lg:my-2">
+            <div>
+                <img src="./images/no-image.png" alt="" class="w-60 xs:w-72 sm:w-80 xl:w-96 my-5 mx-auto">
+            </div>
+            <div class="mx-2 grid gap-2 lg:gap-0">
+                <p class="text-center text-2xl my-2 font-bold xs:text-3xl xl:text-5xl">Some Movie</p>
+                <p class="flex xs:text-lg"><svg class="size-4 my-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#FFD43B" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg><span class="my-auto mx-1">6.9 / 10</span></p>
+                <p class="xs:text-lg lg:text-xl">Release Date: 2024-10-09</p>
+                <p class="xs:text-lg lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus eum architecto laborum vitae quam, tempora aperiam suscipit deleniti molestias quaerat! Autem blanditiis officiis illo doloremque nam, velit ad delectus!</p>
+                <div class="xs:text-lg lg:text-xl">
+                    <span class="font-bold lg:text-xl">Genres</span>
+                    <ul>
+                        <li>Horror</li>
+                        <li>Thriller</li>
+                        <li>Mystery</li>
+                    </ul>
+                </div>
+                <div class="grid align-middle justify-center items-center">
+                <a href="" class="border w-52 text-center mx-auto my-2 py-2 rounded border-amber-400 hover:bg-amber-400 hover:text-black transition-all duration-500 font-semibold lg:text-lg">Visit Movie Homepage</a></div>
+            </div>
+            <div class="grid lg:col-span-2">
+                <p class="text-center my-2 text-xl font-bold lg:text-2xl">MOVIE INFO</p>
+                <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Budget:</span> $2,000,000</p>
+                <hr class="opacity-35 mx-1">
+                <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Revenue:</span> $4,460,123,993</p>
+                <hr class="opacity-35 mx-1">
+                <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Runtime:</span> 125 Minutes</p>
+                <hr class="opacity-35 mx-1">
+                <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Status:</span> Released</p>
+                <hr class="opacity-35 mx-1">
+                <p class="ml-2 font-semibold my-2 lg:my-4 xl:ml-4 xs:text-lg ">Production Companies</p>
+                <ul class="ml-4 xl:ml-8">
+                    <li>Production 1</li>
+                    <li>Production 2</li>
+                    <li>Production 3</li>
+                    <li>Production 4</li>
+                </ul>
+            </div>
+    </section>
+    </main>
+    <nav class="grid grid-cols-2 xs:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center items-center align-middle text-center py-4 bg-black text-white shadow-sm shadow-slate-500 mt-4">
+        <div class="">
+            <a href="" class="text-3xl lg:text-4xl kanit-black">MovieDB</a>
+        </div>
+        <div class="hidden xs:flex"></div>
+        <div class="hidden lg:flex mx-auto">Personal Learning Project. Made By Ashish Jain</div>
+        <div class="hidden xl:flex"></div>
+        <div class="flex justify-evenly gap-2 sm:gap-1 font-semibold lg:text-xl">
+            <a href="https://www.themoviedb.org/?language=en-US" class="hover:text-amber-400 transition-all duration-200">TMBD</a>
+            <a href="https://github.com/ashishjain-repo" class="hover:text-amber-400 transition-all duration-200">Github</a>
+            <a href="https://www.linkedin.com/in/ashishjain1008/" class="hover:text-amber-400 transition-all duration-200">LinkedIn</a>
+        </div>
+    </nav>
+</body>
+
+</html>
