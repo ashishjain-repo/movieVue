@@ -1,8 +1,8 @@
 <script setup>
-import NavbarTop from '@/components/NavbarTop.vue';
-import NavbarBottom from '@/components/NavbarBottom.vue';
-import TopMovies from '@/components/TopMovies.vue';
-import TopTvShows from '@/components/TopTvShows.vue';
+import NavbarTop from '@/components/navbar/NavbarTop.vue';
+import NavbarBottom from '@/components/navbar/NavbarBottom.vue';
+import TopMovies from '@/components/home/TopMovies.vue';
+import TopTvShows from '@/components/home/TopTvShows.vue';
 
 </script>
 

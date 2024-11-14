@@ -2,14 +2,15 @@
 import { onMounted, reactive } from 'vue';
 import axios from 'axios';
 import {RouterLink} from 'vue-router';
+
 const state = reactive({
     tv: [],
 });
 
 onMounted(async () => {
-    const API_URL = "https://api.themoviedb.org/3/"
-    const API_KEY = "96a295ed5e51ddb6255b1ba01f334994"
-    const END_POINT = "tv/top_rated"
+    const API_URL = "https://api.themoviedb.org/3/";
+    const API_KEY = import.meta.env.VITE_API_KEY;
+    const END_POINT = "tv/top_rated";
     try {
         const response = await axios.get(`${API_URL}${END_POINT}?api_key=${API_KEY}&language=en-US`);
         state.tv = response.data.results;
