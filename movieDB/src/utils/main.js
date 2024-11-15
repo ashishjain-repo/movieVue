@@ -11,3 +11,8 @@ export function trimName(name) {
     }
     else { return name }
 };
+
+export function addCommasToNumber(number)
+{
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}

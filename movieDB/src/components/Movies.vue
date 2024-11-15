@@ -4,6 +4,7 @@ import axios from 'axios';
 import { RouterLink } from 'vue-router';
 import { trimName } from '@/utils/main';
 
+
 const props = defineProps({
     title: {
         type: String,

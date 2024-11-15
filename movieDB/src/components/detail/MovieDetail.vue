@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { reactive, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
+import { addCommasToNumber } from '@/utils/main';
 
 const route = useRoute();
 const movieId = route.params.id;
