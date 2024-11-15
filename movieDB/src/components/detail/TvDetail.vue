@@ -17,7 +17,7 @@ onMounted(async () => {
         const response = await axios.get(`${API_URL}tv/${seriesId}?api_key=${API_KEY}&language=en-US`);
         state.series = response.data;
         console.log(state.series);
-        document.title = `MovieDB | ${state.series.title}`
+        document.title = `MovieDB | ${state.series.name}`
     }
     catch (error) {
         console.log("Error Fetching Request: ", error);
@@ -33,7 +33,7 @@ onMounted(async () => {
             <img :src="state.series.poster_path ? 'https://image.tmdb.org/t/p/w500' + state.series.poster_path : '../../assets/image/no-image.png'" alt="" class="w-60 xs:w-72 sm:w-80 xl:w-96 my-5 mx-auto">
         </div>
         <div class="mx-2 grid gap-2 lg:gap-0">
-            <p class="text-center text-2xl my-2 font-bold xs:text-3xl xl:text-5xl">{{ state.series.title }}</p>
+            <p class="text-center text-2xl my-2 font-bold xs:text-3xl xl:text-5xl">{{ state.series.name }}</p>
             <p class="flex xs:text-lg"><svg class="size-4 my-auto" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512">
                 <path fill="#FFD43B"

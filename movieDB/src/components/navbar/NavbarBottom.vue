@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
@@ -12,7 +13,7 @@
         <div class="hidden xl:flex"></div>
         <div class="hidden lg:flex"></div>
         <div class="">
-            <a href="" class="text-3xl lg:text-4xl kanit-black">MovieDB</a>
+            <RouterLink :to="'/'" class="text-3xl lg:text-4xl kanit-black">MovieDB</RouterLink>
         </div>
     </nav>
 </template>
