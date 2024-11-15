@@ -2,6 +2,7 @@
 import NavbarTop from '@/components/navbar/NavbarTop.vue';
 import NavbarBottom from '@/components/navbar/NavbarBottom.vue';
 import MovieDetail from '@/components/detail/MovieDetail.vue';
+
 </script>
 
 <template>

@@ -16,19 +16,18 @@ onMounted(async () => {
     try {
         const response = await axios.get(`${API_URL}movie/${movieId}?api_key=${API_KEY}&language=en-US`);
         state.movie = response.data;
-        console.log(state.movie);
+        document.title = `MovieDB | ${state.movie.title}`
     }
     catch (error) {
         console.log("Error Fetching Request: ", error);
     }
 });
 
-
 </script>
 
 <template>
     <section class="grid lg:grid-cols-2 lg:my-2 relative">
-        <img :src="'https://image.tmdb.org/t/p/original/'+state.movie.backdrop_path" alt="" class="absolute -top-1 inset-0 w-screen h-screen object-cover opacity-10">
+        <img :src="'https://image.tmdb.org/t/p/original/'+state.movie.backdrop_path" alt="" class="absolute -top-1 inset-0 w-screen h-screen object-cover opacity-5">
         <div>
             <img :src="state.movie.poster_path ? 'https://image.tmdb.org/t/p/w500' + state.movie.poster_path : '../../assets/image/no-image.png'" alt="" class="w-60 xs:w-72 sm:w-80 xl:w-96 my-5 mx-auto">
         </div>
@@ -58,22 +57,19 @@ onMounted(async () => {
         </div>
         <div class="grid lg:col-span-2">
             <p class="text-center my-2 text-xl font-bold lg:text-2xl">MOVIE INFO</p>
-            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Budget:</span> $2,000,000</p>
+            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Budget:</span> ${{ state.movie.budget }}</p>
             <hr class="opacity-35 mx-1">
-            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Revenue:</span> $4,460,123,993
+            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Revenue:</span> ${{ state.movie.revenue }}
             </p>
             <hr class="opacity-35 mx-1">
-            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Runtime:</span> 125 Minutes
+            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Runtime:</span> {{ state.movie.runtime }} Minutes
             </p>
             <hr class="opacity-35 mx-1">
-            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Status:</span> Released</p>
+            <p class="ml-2 my-2 lg:my-4 xl:ml-4 xs:text-lg "><span class="text-amber-400">Status:</span> {{ state.movie.status }}</p>
             <hr class="opacity-35 mx-1">
             <p class="ml-2 font-semibold my-2 lg:my-4 xl:ml-4 xs:text-lg ">Production Companies</p>
             <ul class="ml-4 xl:ml-8">
-                <li>Production 1</li>
-                <li>Production 2</li>
-                <li>Production 3</li>
-                <li>Production 4</li>
+                <li v-for="company in state.movie.production_companies">{{ company.name }}</li>
             </ul>
         </div>
     </section>
