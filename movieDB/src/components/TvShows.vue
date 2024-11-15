@@ -23,7 +23,7 @@ const state = reactive({
 
 onMounted(async () => {
     const API_URL = "https://api.themoviedb.org/3/";
-    const API_KEY = import.meta.env.VITE_API_KEY;
+    const API_KEY = "96a295ed5e51ddb6255b1ba01f334994";
 
     try {
         const response = await axios.get(`${API_URL}${props.endPoint}?api_key=${API_KEY}&language=en-US`);
