@@ -1,9 +1,10 @@
 <script setup>
 import axios from 'axios';
 import { reactive, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();
+const router = useRouter();
 const seriesId = route.params.id;
 
 const state = reactive({
@@ -22,6 +23,12 @@ onMounted(async () => {
     catch (error) {
         console.log("Error Fetching Request: ", error);
     }
+    finally{
+        if(state.series.length === 0)
+        {
+            router.push({name:'home'});
+        }
+    }
 });
 
 </script>
@@ -30,7 +37,7 @@ onMounted(async () => {
     <section class="grid lg:grid-cols-2 lg:my-2 relative">
         <img :src="'https://image.tmdb.org/t/p/original/'+state.series.backdrop_path" alt="" class="absolute -top-1 inset-0 w-screen h-screen object-cover opacity-5">
         <div>
-            <img :src="state.series.poster_path ? 'https://image.tmdb.org/t/p/w500' + state.series.poster_path : '../../assets/image/no-image.png'" alt="" class="w-60 xs:w-72 sm:w-80 xl:w-96 my-5 mx-auto">
+            <img :src="state.series.poster_path ? 'https://image.tmdb.org/t/p/w500' + state.series.poster_path : '/src/assets/image/no-image.png'" alt="" class="w-60 xs:w-72 sm:w-80 xl:w-96 my-5 mx-auto">
         </div>
         <div class="mx-2 grid gap-2 lg:gap-0">
             <p class="text-center text-2xl my-2 font-bold xs:text-3xl xl:text-5xl">{{ state.series.name }}</p>
